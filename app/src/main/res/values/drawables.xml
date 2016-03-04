@@ -1,0 +1,4 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_compass" type="drawable">@drawable/ic_menu_compass</item>
+    <item name="ic_menu_slideshow" type="drawable">@drawable/ic_menu_star_circle</item>
+</resources>
