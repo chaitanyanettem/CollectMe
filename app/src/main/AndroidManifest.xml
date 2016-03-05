@@ -36,7 +36,8 @@
             android:value="im.chaitanya" />
 
         <activity android:name=".AssetDetailActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/new_asset">
         </activity>
     </application>
 

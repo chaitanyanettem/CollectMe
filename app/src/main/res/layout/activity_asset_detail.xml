@@ -62,7 +62,7 @@
                 android:paddingBottom="24dp">
 
                 <LinearLayout
-                    style="@style/Widget.CardContent"
+                    style="@style/Widget.CardContent.Details"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 

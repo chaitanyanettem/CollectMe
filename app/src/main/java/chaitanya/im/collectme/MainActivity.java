@@ -1,5 +1,7 @@
 package chaitanya.im.collectme;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -29,8 +31,10 @@ public class MainActivity extends AppCompatActivity
     private RecyclerView.Adapter _adapter;
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerView _assetList;
+    Context context = this;
     private static ArrayList<AssetListDataModel> _data = new ArrayList<>();
     Firebase myFirebaseRef = new Firebase("https://flickering-torch-8914.firebaseio.com/assets");
+    private final String TAG = this.getClass().getName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +58,17 @@ public class MainActivity extends AppCompatActivity
         myFirebaseRef.push().setValue(data.get(1));
         myFirebaseRef.push().setValue(data.get(2));
         myFirebaseRef.push().setValue(data.get(3));*/
-        
-        _adapter = new AssetListAdapter(_data, this);
+
+        _adapter = new AssetListAdapter(_data, this, new AssetListAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(AssetListDataModel asset) {
+                Intent intent = new Intent(context, AssetDetailActivity.class);
+                intent.putExtra("assetID", asset.getId());
+                intent.putExtra("assetName", asset.getItemName());
+                intent.putExtra("assetCategory", asset.getCategory());
+                context.startActivity(intent);
+            }
+        });
         _assetList.setAdapter(_adapter);
         myFirebaseRef.addValueEventListener(listener);
 
@@ -76,7 +89,7 @@ public class MainActivity extends AppCompatActivity
     ValueEventListener listener = new ValueEventListener() {
         @Override
         public void onDataChange(DataSnapshot dataSnapshot) {
-            Log.d("onDataChange", dataSnapshot.getChildrenCount() + " assets.");
+            Log.d(TAG , "onDataChange - " + dataSnapshot.getChildrenCount() + " assets.");
             _data.clear();
             for (DataSnapshot assetSnapshot: dataSnapshot.getChildren()) {
                 AssetListDataModel asset = assetSnapshot.getValue(AssetListDataModel.class);
@@ -87,7 +100,7 @@ public class MainActivity extends AppCompatActivity
 
         @Override
         public void onCancelled(FirebaseError firebaseError) {
-            Log.d("TAG", "The read failed: " + firebaseError.getMessage());
+            Log.d(TAG, "The read failed: " + firebaseError.getMessage());
         }
     };
 
