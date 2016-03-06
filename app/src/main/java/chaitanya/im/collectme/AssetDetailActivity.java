@@ -2,6 +2,7 @@ package chaitanya.im.collectme;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.location.Location;
@@ -16,12 +17,16 @@ import android.support.v4.app.NavUtils;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -84,6 +89,9 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
     private double longitude;
     private double assetLatitude;
     private double assetLongitude;
+    CardView logCard;
+    AssetLogDataModel logmsg = new AssetLogDataModel("");
+    private String currentID;
     private Button button;
     private Boolean savecoordinates = true;
     private Boolean coordinatesAvailable = false;
@@ -392,6 +400,7 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
         nestedScrollView = (NestedScrollView) findViewById(R.id.item_detail_container);
         assetCoordinates = (TextView) findViewById(R.id.asset_coordinates);
         assetCoordinatesSaved = (TextView) findViewById(R.id.asset_coordinates_saved);
+        logCard = (CardView) findViewById(R.id.logCard);
         button = (Button) findViewById(R.id.button);
         gpsSwitch = (Switch) findViewById(R.id.gpsSwitch);
         gpsSwitch.setChecked(true);
@@ -400,6 +409,8 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
         updateFab = (FloatingActionButton) findViewById(R.id.updateFab);
         updateFab.setOnClickListener(new FabOnClickListener());
 
+
+        logCard.setVisibility(View.GONE);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -413,6 +424,7 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
             newAsset = new AssetListDataModel("","","","", -1, -1);
         }
         else {
+            currentID = assetID;
             assetsRef = new Firebase("https://flickering-torch-8914.firebaseio.com/assets/" + assetID);
             assetName = intent.getStringExtra("assetName");
             assetCategory = intent.getStringExtra("assetCategory");
@@ -508,9 +520,10 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
                 id.put("id", assetID);
                 assetsRef = assetsRef.child(assetID);
                 assetsRef.updateChildren(id);
+                currentID = assetID;
                 Log.d(TAG, "FabOnClickListener - first - " + assetName + " " + assetCategory + " " + assetID);
                 first = false;
-
+                button.setVisibility(View.VISIBLE);
                 showSnackbar(view, "Asset has been created.");
             }
             else {
@@ -551,6 +564,32 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
                 showSnackbar(view, "Asset updated.");
             }
         }
+    }
+
+    public void logButtonClicked(View v) {
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+
+        final EditText edittextalert = new EditText(this);
+        alert.setMessage("Enter log");
+        alert.setTitle("Logger");
+        alert.setView(edittextalert);
+        alert.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                logmsg.logMsg = android.text.format.
+                        DateFormat.
+                        getTimeFormat(context).
+                        getDateInstance().
+                        format(new Date());
+
+                logmsg.logMsg = logmsg.logMsg + "\n" + edittextalert.getText().toString() + "\n";
+                Firebase currentLog = new Firebase("https://flickering-torch-8914.firebaseio.com/logs/" + currentID);
+                currentLog.push().setValue(logmsg);
+                final TextView logText = (TextView) findViewById(R.id.logText);
+                logText.append(logmsg.logMsg);
+            }
+        });
+        alert.show();
     }
 
     private void showCategoryDialog() {
