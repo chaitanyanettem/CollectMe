@@ -6,10 +6,6 @@
             android:id="@+id/nav_discover"
             android:icon="@drawable/ic_menu_compass"
             android:title="@string/new_and_popular" />
-        <item
-            android:id="@+id/nav_favourites"
-            android:icon="@drawable/ic_menu_star_circle"
-            android:title="@string/favourites" />
     </group>
 
 </menu>

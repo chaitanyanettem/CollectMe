@@ -3,6 +3,9 @@ package chaitanya.im.collectme;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -15,6 +18,8 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -22,6 +27,7 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import chaitanya.im.collectme.Adapters.AssetListAdapter;
 
@@ -31,22 +37,35 @@ public class MainActivity extends AppCompatActivity
     private RecyclerView.Adapter _adapter;
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerView _assetList;
+    private DrawerLayout navDrawer;
     Context context = this;
     private static ArrayList<AssetListDataModel> _data = new ArrayList<>();
     Firebase myFirebaseRef = new Firebase("https://flickering-torch-8914.firebaseio.com/assets");
     private final String TAG = this.getClass().getName();
+    FloatingActionButton fabAddNew;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        fabAddNew = (FloatingActionButton) findViewById(R.id.addNewFab);
 
+        navDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         _assetList = (RecyclerView) findViewById(R.id.movie_posters);
         _assetList.setHasFixedSize(true);
 
         layoutManager = new LinearLayoutManager(this);
         _assetList.setLayoutManager(layoutManager);
         _assetList.setItemAnimator(new DefaultItemAnimator());
+        _assetList.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                if (dy > 0 && fabAddNew.isShown())
+                    fabAddNew.hide();
+                else if (dy < 0 && !fabAddNew.isShown())
+                    fabAddNew.show();
+            }
+        });
 
         //Firebase myFirebaseRef = this.myFirebaseRef.child("assets");
 
@@ -63,9 +82,13 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onItemClick(AssetListDataModel asset) {
                 Intent intent = new Intent(context, AssetDetailActivity.class);
+                Log.d(TAG, asset.toString());
                 intent.putExtra("assetID", asset.getId());
                 intent.putExtra("assetName", asset.getItemName());
                 intent.putExtra("assetCategory", asset.getCategory());
+                intent.putExtra("assetExtraInfo", asset.getExtraInfo());
+                intent.putExtra("latitude", asset.getLatitude());
+                intent.putExtra("longitude", asset.getLongitude());
                 context.startActivity(intent);
             }
         });
@@ -81,6 +104,14 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.addNewFab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, AssetDetailActivity.class);
+                context.startActivity(intent);
+            }
+        });
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -130,6 +161,16 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            if(_data.size() > 0) {
+                Intent intent = new Intent(this, AssetMap.class);
+                Toast.makeText(this, "Starting Asset Mapview",
+                        Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+            else {
+                Toast.makeText(this, "You have to first add some assets",
+                        Toast.LENGTH_SHORT).show();
+            }
             return true;
         }
 
@@ -141,15 +182,24 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
         if (id == R.id.nav_discover) {
-            // Handle the camera action
-        } else if (id == R.id.nav_favourites) {
+            if(_data.size() > 0) {
+                Intent intent = new Intent(this, AssetMap.class);
+                navDrawer.closeDrawer(GravityCompat.START);
+                Toast.makeText(this, "Starting Asset Mapview",
+                        Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+            else {
+                navDrawer.closeDrawer(GravityCompat.START);
+                Toast.makeText(this, "You have to first add some assets",
+                        Toast.LENGTH_SHORT).show();
+            }
 
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

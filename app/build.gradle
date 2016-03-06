@@ -7,13 +7,15 @@ android {
     defaultConfig {
         applicationId "chaitanya.im.collectme"
         minSdkVersion 15
-        targetSdkVersion 23
+        targetSdkVersion 22
         versionCode 1
         versionName "0.1"
     }
 
     defaultConfig {
         generatedDensities = []
+        multiDexEnabled true
+
     }
 
     aaptOptions {
@@ -50,4 +52,7 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.1.2'
     compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
     compile 'com.firebase:firebase-client-android:2.5.2'
+    compile 'com.google.android.gms:play-services-location:8.4.0'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+    compile 'com.google.android.gms:play-services-identity:8.4.0'
 }
