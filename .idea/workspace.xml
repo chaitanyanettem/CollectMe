@@ -29,68 +29,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AssetDetailActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Activity/AssetDetailActivity.java">
+      <file leaf-file-name="content_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="857" column="0" selection-start-line="857" selection-start-column="0" selection-end-line="857" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#9045#9199#0" expanded="true" />
-                <element signature="e#9198#9199#0" expanded="true" />
-                <element signature="e#9248#9711#0" expanded="true" />
-                <element signature="e#9710#9711#0" expanded="true" />
-                <element signature="e#16503#17187#0" expanded="true" />
-                <element signature="e#17186#17187#0" expanded="true" />
-                <element signature="e#17236#17423#0" expanded="true" />
-                <element signature="e#17422#17423#0" expanded="true" />
-                <element signature="e#18375#18429#0" expanded="true" />
-                <element signature="e#18816#18865#0" expanded="true" />
-                <element signature="e#19277#19323#0" expanded="true" />
-                <element signature="e#19707#19752#0" expanded="true" />
-                <element signature="e#20136#20182#0" expanded="true" />
-                <element signature="e#20569#20614#0" expanded="true" />
-                <element signature="e#21002#21049#0" expanded="true" />
-                <element signature="e#21440#21488#0" expanded="true" />
-                <element signature="e#21877#21922#0" expanded="true" />
-                <element signature="e#22307#22351#0" expanded="true" />
-                <element signature="e#22736#22781#0" expanded="true" />
-                <element signature="method#onConnected#0;class#AssetDetailActivity#0" expanded="false" />
-                <element signature="method#createLocationRequest#0;class#AssetDetailActivity#0" expanded="false" />
-                <element signature="docComment;method#buildGoogleApiClient#0;class#AssetDetailActivity#0" expanded="false" />
-                <element signature="docComment;method#buildLocationSettingsRequest#0;class#AssetDetailActivity#0" expanded="false" />
-                <element signature="docComment;method#checkLocationSettings#0;class#AssetDetailActivity#0" expanded="false" />
-                <element signature="method#startLocationUpdates#0;class#AssetDetailActivity#0" expanded="false" />
-                <element signature="e#30861#31059#0" expanded="true" />
-                <element signature="e#31058#31059#0" expanded="true" />
-                <element signature="docComment;method#updateUI#0;class#AssetDetailActivity#0" expanded="false" />
-                <element signature="docComment;method#updateLocationUI#0;class#AssetDetailActivity#0" expanded="false" />
-                <element signature="docComment;method#stopLocationUpdates#0;class#AssetDetailActivity#0" expanded="false" />
-                <element signature="e#32374#32552#0" expanded="true" />
-                <element signature="e#32551#32552#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category_selection.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/category_selection.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1666665">
-              <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
-              <folding>
-                <element signature="e#680#700#0" expanded="true" />
-                <element signature="e#1188#1212#0" expanded="true" />
-                <element signature="e#1641#1670#0" expanded="true" />
-                <element signature="e#2091#2112#0" expanded="true" />
-                <element signature="e#2533#2554#0" expanded="true" />
-                <element signature="e#2974#2994#0" expanded="true" />
-                <element signature="e#3416#3438#0" expanded="true" />
-                <element signature="e#3861#3884#0" expanded="true" />
-                <element signature="e#4304#4324#0" expanded="true" />
-                <element signature="e#4743#4762#0" expanded="true" />
-                <element signature="e#5182#5202#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-11.9">
+              <caret line="21" column="70" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="70" />
+              <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
@@ -98,12 +42,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <file leaf-file-name="AssetDetailActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Activity/AssetDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.59375">
-              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="204" column="32" selection-start-line="204" selection-start-column="16" selection-end-line="204" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#9046#9200#0" expanded="true" />
+                <element signature="e#9199#9200#0" expanded="true" />
+                <element signature="e#9249#9712#0" expanded="true" />
+                <element signature="e#9711#9712#0" expanded="true" />
+                <element signature="class#AssetValueListener#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="class#LogValueListener#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="class#buttonClickListener#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="method#createLogAlert#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="e#16320#17004#0" expanded="true" />
+                <element signature="e#17003#17004#0" expanded="true" />
+                <element signature="e#17053#17240#0" expanded="true" />
+                <element signature="e#17239#17240#0" expanded="true" />
+                <element signature="method#showCategoryDialog#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="method#showSnackbar#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="method#onRadioButtonClicked#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="e#18192#18246#0" expanded="true" />
+                <element signature="e#18633#18682#0" expanded="true" />
+                <element signature="e#19094#19140#0" expanded="true" />
+                <element signature="e#19524#19569#0" expanded="true" />
+                <element signature="e#19953#19999#0" expanded="true" />
+                <element signature="e#20386#20431#0" expanded="true" />
+                <element signature="e#20819#20866#0" expanded="true" />
+                <element signature="e#21257#21305#0" expanded="true" />
+                <element signature="e#21694#21739#0" expanded="true" />
+                <element signature="e#22124#22168#0" expanded="true" />
+                <element signature="e#22553#22598#0" expanded="true" />
+                <element signature="method#createLocationRequest#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="docComment;method#buildGoogleApiClient#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="method#buildGoogleApiClient#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="docComment;method#buildLocationSettingsRequest#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="method#buildLocationSettingsRequest#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="docComment;method#checkLocationSettings#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="method#checkLocationSettings#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="e#30005#30006#0" expanded="true" />
+                <element signature="e#30044#30045#0" expanded="true" />
+                <element signature="method#startLocationUpdates#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="e#30678#30876#0" expanded="true" />
+                <element signature="e#30875#30876#0" expanded="true" />
+                <element signature="e#31227#31228#0" expanded="true" />
+                <element signature="e#31261#31262#0" expanded="true" />
+                <element signature="docComment;method#updateLocationUI#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="docComment;method#stopLocationUpdates#0;class#AssetDetailActivity#0" expanded="false" />
+                <element signature="e#32231#32409#0" expanded="true" />
+                <element signature="e#32408#32409#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,8 +101,8 @@
       <file leaf-file-name="activity_asset_detail.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_asset_detail.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.4">
-              <caret line="111" column="60" selection-start-line="111" selection-start-column="60" selection-end-line="111" selection-end-column="60" />
+            <state vertical-scroll-proportion="-7.1666665">
+              <caret line="140" column="36" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -121,37 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssetListAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Adapters/AssetListAdapter.java">
+      <file leaf-file-name="Switch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/development/adt-bundle-linux-x86_64-20140702/sdk/sources/android-23/android/widget/Switch.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
-              <folding>
-                <element signature="e#2763#2944#0" expanded="true" />
-                <element signature="e#2943#2944#0" expanded="true" />
-                <element signature="e#3035#3089#0" expanded="true" />
-                <element signature="e#3224#3282#0" expanded="true" />
-                <element signature="e#3423#3486#0" expanded="true" />
-                <element signature="e#3623#3678#0" expanded="true" />
-                <element signature="e#3816#3871#0" expanded="true" />
-                <element signature="e#4010#4064#0" expanded="true" />
-                <element signature="e#4201#4257#0" expanded="true" />
-                <element signature="e#4396#4453#0" expanded="true" />
-                <element signature="e#4593#4647#0" expanded="true" />
-                <element signature="e#4784#4837#0" expanded="true" />
-                <element signature="e#4973#5027#0" expanded="true" />
-                <element signature="e#5819#5820#0" expanded="true" />
-                <element signature="e#5867#5868#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssetListDataModel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/DataModel/AssetListDataModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.577548">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -169,11 +133,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AssetLogDataModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/DataModel/AssetLogDataModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.066667">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Activity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="93" column="71" selection-start-line="93" selection-start-column="71" selection-end-line="93" selection-end-column="71" />
+              <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,22 +168,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.09375">
-              <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.7100775">
+              <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5625">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+              <folding>
+                <element signature="e#639#657#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1983,7 +1972,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/CategoryChooser.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/MyEditText.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/CustomEditText.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" />
         <option value="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/MapsActivity.java" />
@@ -2000,15 +1988,19 @@
         <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_asset_card.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_asset_detail.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/category_selection.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/AssetDetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Adapters/AssetListAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/AssetListDataModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/DataModel/AssetListDataModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/DataModel/AssetLogDataModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Activity/AssetDetailActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       </list>
     </option>
   </component>
@@ -2177,6 +2169,50 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="DataModel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollectMe" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collectme" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Adapters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollectMe" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collectme" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Activity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2189,6 +2225,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2414,7 +2454,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.50747865" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32294616" sideWeight="0.51481956" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51983005" sideWeight="0.4903846" order="7" side_tool="false" content_ui="tabs" />
@@ -2429,7 +2469,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32368702" sideWeight="0.48771366" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32152975" sideWeight="0.4851804" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925257" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52304393" sideWeight="0.50961536" order="7" side_tool="true" content_ui="tabs" />
@@ -2467,19 +2507,11 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v21/ic_plus_white_24dp.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2648,41 +2680,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5333333">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.433332">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding>
-            <element signature="e#1224#1243#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.066667">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/side_nav_bar.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2750,14 +2747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/DataModel/AssetLogDataModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/development/adt-bundle-linux-x86_64-20140702/sdk/sources/android-23/android/text/format/DateFormat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2813,37 +2802,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="e#639#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_asset_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4">
-          <caret line="111" column="60" selection-start-line="111" selection-start-column="60" selection-end-line="111" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Activity/AssetMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.09375">
@@ -2856,14 +2814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.5625">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.59375">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -2889,58 +2839,6 @@
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Activity/AssetDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="857" column="0" selection-start-line="857" selection-start-column="0" selection-end-line="857" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9045#9199#0" expanded="true" />
-            <element signature="e#9198#9199#0" expanded="true" />
-            <element signature="e#9248#9711#0" expanded="true" />
-            <element signature="e#9710#9711#0" expanded="true" />
-            <element signature="e#16503#17187#0" expanded="true" />
-            <element signature="e#17186#17187#0" expanded="true" />
-            <element signature="e#17236#17423#0" expanded="true" />
-            <element signature="e#17422#17423#0" expanded="true" />
-            <element signature="e#18375#18429#0" expanded="true" />
-            <element signature="e#18816#18865#0" expanded="true" />
-            <element signature="e#19277#19323#0" expanded="true" />
-            <element signature="e#19707#19752#0" expanded="true" />
-            <element signature="e#20136#20182#0" expanded="true" />
-            <element signature="e#20569#20614#0" expanded="true" />
-            <element signature="e#21002#21049#0" expanded="true" />
-            <element signature="e#21440#21488#0" expanded="true" />
-            <element signature="e#21877#21922#0" expanded="true" />
-            <element signature="e#22307#22351#0" expanded="true" />
-            <element signature="e#22736#22781#0" expanded="true" />
-            <element signature="method#onConnected#0;class#AssetDetailActivity#0" expanded="false" />
-            <element signature="method#createLocationRequest#0;class#AssetDetailActivity#0" expanded="false" />
-            <element signature="docComment;method#buildGoogleApiClient#0;class#AssetDetailActivity#0" expanded="false" />
-            <element signature="docComment;method#buildLocationSettingsRequest#0;class#AssetDetailActivity#0" expanded="false" />
-            <element signature="docComment;method#checkLocationSettings#0;class#AssetDetailActivity#0" expanded="false" />
-            <element signature="method#startLocationUpdates#0;class#AssetDetailActivity#0" expanded="false" />
-            <element signature="e#30861#31059#0" expanded="true" />
-            <element signature="e#31058#31059#0" expanded="true" />
-            <element signature="docComment;method#updateUI#0;class#AssetDetailActivity#0" expanded="false" />
-            <element signature="docComment;method#updateLocationUI#0;class#AssetDetailActivity#0" expanded="false" />
-            <element signature="docComment;method#stopLocationUpdates#0;class#AssetDetailActivity#0" expanded="false" />
-            <element signature="e#32374#32552#0" expanded="true" />
-            <element signature="e#32551#32552#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="71" selection-start-line="93" selection-start-column="71" selection-end-line="93" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Adapters/AssetListAdapter.java">
@@ -2969,8 +2867,160 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/DataModel/AssetListDataModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.577548">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.433332">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/DataModel/AssetLogDataModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.066667">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="e#639#657#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.9">
+          <caret line="21" column="70" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Activity/AssetMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/development/adt-bundle-linux-x86_64-20140702/sdk/sources/android-23/android/widget/Switch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_asset_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1666665">
+          <caret line="140" column="36" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/chaitanya/im/collectme/Activity/AssetDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="204" column="32" selection-start-line="204" selection-start-column="16" selection-end-line="204" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9046#9200#0" expanded="true" />
+            <element signature="e#9199#9200#0" expanded="true" />
+            <element signature="e#9249#9712#0" expanded="true" />
+            <element signature="e#9711#9712#0" expanded="true" />
+            <element signature="class#AssetValueListener#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="class#LogValueListener#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="class#buttonClickListener#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="method#createLogAlert#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="e#16320#17004#0" expanded="true" />
+            <element signature="e#17003#17004#0" expanded="true" />
+            <element signature="e#17053#17240#0" expanded="true" />
+            <element signature="e#17239#17240#0" expanded="true" />
+            <element signature="method#showCategoryDialog#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="method#showSnackbar#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="method#onRadioButtonClicked#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="e#18192#18246#0" expanded="true" />
+            <element signature="e#18633#18682#0" expanded="true" />
+            <element signature="e#19094#19140#0" expanded="true" />
+            <element signature="e#19524#19569#0" expanded="true" />
+            <element signature="e#19953#19999#0" expanded="true" />
+            <element signature="e#20386#20431#0" expanded="true" />
+            <element signature="e#20819#20866#0" expanded="true" />
+            <element signature="e#21257#21305#0" expanded="true" />
+            <element signature="e#21694#21739#0" expanded="true" />
+            <element signature="e#22124#22168#0" expanded="true" />
+            <element signature="e#22553#22598#0" expanded="true" />
+            <element signature="method#createLocationRequest#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="docComment;method#buildGoogleApiClient#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="method#buildGoogleApiClient#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="docComment;method#buildLocationSettingsRequest#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="method#buildLocationSettingsRequest#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="docComment;method#checkLocationSettings#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="method#checkLocationSettings#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="e#30005#30006#0" expanded="true" />
+            <element signature="e#30044#30045#0" expanded="true" />
+            <element signature="method#startLocationUpdates#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="e#30678#30876#0" expanded="true" />
+            <element signature="e#30875#30876#0" expanded="true" />
+            <element signature="e#31227#31228#0" expanded="true" />
+            <element signature="e#31261#31262#0" expanded="true" />
+            <element signature="docComment;method#updateLocationUI#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="docComment;method#stopLocationUpdates#0;class#AssetDetailActivity#0" expanded="false" />
+            <element signature="e#32231#32409#0" expanded="true" />
+            <element signature="e#32408#32409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7100775">
+          <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
           <folding />
         </state>
       </provider>

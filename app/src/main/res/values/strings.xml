@@ -27,13 +27,12 @@
     <string name="radio_computer">Computer</string>
     <string name="radio_other">Other</string>
     <string name="radio_meter">Meter</string>
-    <string name="radio_electricity">Electricity Poles</string>
     <string name="radio_electric_pole">Electric Pole</string>
-    <string name="radio_bulb">Electric part</string>
+    <string name="radio_bulb">Electric Parts</string>
     <string name="radio_petrol">Petrol Pump</string>
     <string name="radio_signage">Signage</string>
     <string name="radio_sofa">Benches</string>
-    <string name="radio_tap">Plumbing part</string>
+    <string name="radio_tap">Plumbing Parts</string>
     <string name="radio_tree">Park Tree</string>
 
     <string name="title_activity_maps">Map</string>

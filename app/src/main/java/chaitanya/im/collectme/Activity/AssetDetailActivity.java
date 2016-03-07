@@ -174,6 +174,7 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
         context = this;
         alert = createLogAlert();
         gpsSwitch.setChecked(true);
+        startUpdatesButtonHandler(gpsSwitch);
 
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
@@ -200,7 +201,6 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
 
             if (assetLatitude != -1 && assetLongitude != -1) {
                 Log.d(TAG, "" + assetLatitude + "," + assetLongitude);
-                gpsSwitch.setChecked(false);
                 gpsSwitch.setVisibility(View.GONE);
                 GPSLabel.setVisibility(View.VISIBLE);
                 coordinatesAvailable = true;
@@ -308,10 +308,8 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
                 if (mCurrentLocation != null && savecoordinates) {
                     newAsset.latitude = mCurrentLocation.getLatitude();
                     newAsset.longitude = mCurrentLocation.getLongitude();
-                    gpsSwitch.setChecked(false);
                     gpsSwitch.setVisibility(View.GONE);
                     GPSLabel.setVisibility(View.VISIBLE);
-                    stopLocationUpdates();
                     assetCoordinates.setVisibility(View.GONE);
                     assetCoordinatesSaved.setVisibility(View.VISIBLE);
                     assetCoordinatesSaved.setText("" + newAsset.latitude + ", " + newAsset.longitude);
@@ -342,10 +340,8 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
                     mapLongitude.put("longitude", longitude);
                     assetsRef.updateChildren(mapLatitude);
                     assetsRef.updateChildren(mapLongitude);
-                    gpsSwitch.setChecked(false);
                     gpsSwitch.setVisibility(View.GONE);
                     GPSLabel.setVisibility(View.VISIBLE);
-                    stopLocationUpdates();
                     assetCoordinates.setVisibility(View.GONE);
                     assetCoordinatesSaved.setVisibility(View.VISIBLE);
                     assetCoordinatesSaved.setText("" + latitude + ", " + longitude);
@@ -716,6 +712,7 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
     public void onLocationChanged(Location location) {
         mCurrentLocation = location;
         mLastUpdateTime = DateFormat.getTimeInstance().format(new Date());
+        Log.d(TAG, "Location changed");
         updateLocationUI();
     }
 

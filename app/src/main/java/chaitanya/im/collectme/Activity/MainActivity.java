@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         fabAddNew = (FloatingActionButton) findViewById(R.id.addNewFab);
-
+        setTitle("All Assets");
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         navView = (NavigationView) findViewById(R.id.nav_view);
 
@@ -132,6 +133,8 @@ public class MainActivity extends AppCompatActivity
                 AssetListDataModel asset = assetSnapshot.getValue(AssetListDataModel.class);
                 _data.add(asset);
             }
+            LinearLayout linla = (LinearLayout) findViewById(R.id.linlaHeaderProgress);
+            linla.setVisibility(View.GONE);
             _adapter.notifyDataSetChanged();
         }
 

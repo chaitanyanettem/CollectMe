@@ -2,11 +2,11 @@ package chaitanya.im.collectme.DataModel;
 
 public class AssetLogDataModel {
     public String logMsg;
-    AssetLogDataModel() {
+    public AssetLogDataModel() {
 
     }
 
-    AssetLogDataModel(String logMsg) {
+    public AssetLogDataModel(String logMsg) {
         this.logMsg = logMsg;
     }
 
