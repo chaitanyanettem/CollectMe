@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -27,7 +25,6 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import chaitanya.im.collectme.Adapters.AssetListAdapter;
 
@@ -37,7 +34,8 @@ public class MainActivity extends AppCompatActivity
     private RecyclerView.Adapter _adapter;
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerView _assetList;
-    private DrawerLayout navDrawer;
+    private DrawerLayout drawer;
+    private NavigationView navView;
     Context context = this;
     private static ArrayList<AssetListDataModel> _data = new ArrayList<>();
     Firebase myFirebaseRef = new Firebase("https://flickering-torch-8914.firebaseio.com/assets");
@@ -50,7 +48,9 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         fabAddNew = (FloatingActionButton) findViewById(R.id.addNewFab);
 
-        navDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        navView = (NavigationView) findViewById(R.id.nav_view);
+
         _assetList = (RecyclerView) findViewById(R.id.movie_posters);
         _assetList.setHasFixedSize(true);
 
@@ -98,14 +98,12 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.addNewFab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        fabAddNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, AssetDetailActivity.class);
@@ -113,8 +111,13 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        navView.setNavigationItemSelectedListener(this);
+        navView.setCheckedItem(R.id.nav_asset_list);
+    }
+
+    protected void onResume(){
+        super.onResume();
+        navView.setCheckedItem(R.id.nav_asset_list);
     }
 
     ValueEventListener listener = new ValueEventListener() {
@@ -182,20 +185,22 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        if (id == R.id.nav_discover) {
+        if (id == R.id.nav_asset_list) {
+
+        }
+        if (id == R.id.nav_asset_map) {
             if(_data.size() > 0) {
                 Intent intent = new Intent(this, AssetMap.class);
-                navDrawer.closeDrawer(GravityCompat.START);
+                drawer.closeDrawer(GravityCompat.START);
                 Toast.makeText(this, "Starting Asset Mapview",
                         Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
             else {
-                navDrawer.closeDrawer(GravityCompat.START);
+                drawer.closeDrawer(GravityCompat.START);
                 Toast.makeText(this, "You have to first add some assets",
                         Toast.LENGTH_SHORT).show();
             }
-
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

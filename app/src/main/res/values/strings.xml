@@ -3,12 +3,12 @@
     <string name="app_name_long">CollectMe - Asset Collection </string>
 
     <string name="asset_name">Asset Name</string>
-    <string name="asset_name_hint">Click to add asset name (Required)</string>
-    <string name="asset_category">Click to select asset category (Required)</string>
+    <string name="asset_name_hint">Add asset name</string>
+    <string name="asset_category">Select asset category</string>
     <string name="new_asset">New Asset</string>
     <string name="asset_detail_header_image">Asset Details Header Image</string>
-    <string name="asset_extra_info">Other Remarks</string>
-    <string name="asset_extra_info_hint">Click to enter remarks (Optional)</string>
+    <string name="asset_extra_info">Notes</string>
+    <string name="asset_extra_info_hint">Add extra remarks</string>
 
     <string name="location_updated_message">Location updated</string>
 
@@ -18,8 +18,8 @@
 
     <string name="action_settings">Settings</string>
 
-    <string name="new_and_popular">Assets Map View</string>
-    <string name="favourites">Asset Log History</string>
+    <string name="asset_list">All Lists</string>
+    <string name="map_view">Map of Assets</string>
 
     <string name="radio_pump">Pump</string>
     <string name="radio_computer">Computer</string>

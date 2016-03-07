@@ -4,7 +4,7 @@
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:icon="@drawable/ic_compass_white_24dp"
-        android:title="@string/new_and_popular"
+        android:icon="@drawable/ic_map_white_24dp"
+        android:title="@string/asset_list"
         app:showAsAction="always" />
 </menu>

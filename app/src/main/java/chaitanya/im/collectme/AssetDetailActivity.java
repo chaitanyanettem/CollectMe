@@ -1,6 +1,7 @@
 package chaitanya.im.collectme;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -30,6 +31,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -75,6 +78,8 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
 
 
     CollapsingToolbarLayout colToolbar;
+    Dialog alert;
+    EditText edittextalert;
     EditText assetNameEditText;
     EditText assetCategoryEditText;
     EditText assetExtraInfoEditText;
@@ -408,9 +413,10 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
         context = this;
         updateFab = (FloatingActionButton) findViewById(R.id.updateFab);
         updateFab.setOnClickListener(new FabOnClickListener());
+        alert = createAlert();
 
 
-        logCard.setVisibility(View.GONE);
+        //logCard.setVisibility(View.GONE);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -470,16 +476,29 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
         gpsSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked) {
+                if (isChecked) {
                     startUpdatesButtonHandler(buttonView);
                     savecoordinates = true;
-                }
-                else {
+                } else {
                     stopUpdatesButtonHandler(buttonView);
                     savecoordinates = false;
                 }
             }
         });
+
+        button.setOnClickListener(new buttonClickListener());
+    }
+
+    class buttonClickListener implements View.OnClickListener {
+        @Override
+        public void onClick(View view) {
+            alert.show();
+            FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(
+                    FrameLayout.LayoutParams.MATCH_PARENT,
+                    FrameLayout.LayoutParams.WRAP_CONTENT);
+            lp.setMargins(30,0,30,0);
+            edittextalert.setLayoutParams(lp);
+        }
     }
 
     class FabOnClickListener implements View.OnClickListener {
@@ -566,14 +585,14 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
         }
     }
 
-    public void logButtonClicked(View v) {
-        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+    public Dialog createAlert() {
+        AlertDialog.Builder tempAlert;
+        tempAlert = new AlertDialog.Builder(this);
 
-        final EditText edittextalert = new EditText(this);
-        alert.setMessage("Enter log");
-        alert.setTitle("Logger");
-        alert.setView(edittextalert);
-        alert.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+        edittextalert = new EditText(context);
+        tempAlert.setTitle("Enter Log");
+        tempAlert.setView(edittextalert);
+        tempAlert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 logmsg.logMsg = android.text.format.
@@ -589,7 +608,13 @@ public class AssetDetailActivity extends AppCompatActivity implements GoogleApiC
                 logText.append(logmsg.logMsg);
             }
         });
-        alert.show();
+        tempAlert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        return tempAlert.create();
     }
 
     private void showCategoryDialog() {
