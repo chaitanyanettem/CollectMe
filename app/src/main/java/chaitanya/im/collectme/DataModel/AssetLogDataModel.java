@@ -1,4 +1,4 @@
-package chaitanya.im.collectme;
+package chaitanya.im.collectme.DataModel;
 
 public class AssetLogDataModel {
     public String logMsg;

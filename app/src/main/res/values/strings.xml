@@ -2,6 +2,8 @@
     <string name="app_name">CollectMe</string>
     <string name="app_name_long">CollectMe - Asset Collection </string>
 
+    <string name="main_activity_label">All Assets</string>
+
     <string name="asset_name">Asset Name</string>
     <string name="asset_name_hint">Add asset name</string>
     <string name="asset_category">Select asset category</string>
@@ -18,7 +20,7 @@
 
     <string name="action_settings">Settings</string>
 
-    <string name="asset_list">All Lists</string>
+    <string name="asset_list">All Assets</string>
     <string name="map_view">Map of Assets</string>
 
     <string name="radio_pump">Pump</string>
@@ -26,6 +28,13 @@
     <string name="radio_other">Other</string>
     <string name="radio_meter">Meter</string>
     <string name="radio_electricity">Electricity Poles</string>
-    <string name="radio_antenna">Radio Antenna</string>
+    <string name="radio_electric_pole">Electric Pole</string>
+    <string name="radio_bulb">Electric part</string>
+    <string name="radio_petrol">Petrol Pump</string>
+    <string name="radio_signage">Signage</string>
+    <string name="radio_sofa">Benches</string>
+    <string name="radio_tap">Plumbing part</string>
+    <string name="radio_tree">Park Tree</string>
+
     <string name="title_activity_maps">Map</string>
 </resources>

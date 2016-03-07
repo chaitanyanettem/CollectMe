@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:fitsSystemWindows="true"
     android:layout_height="match_parent"
-    tools:context=".AssetDetailActivity">
+    tools:context=".Activity.AssetDetailActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
@@ -70,6 +70,15 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorDetailsLabel"
+                        android:id="@+id/date_created"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:text="@string/asset_name"
                         android:textSize="14sp"
                         android:textColor="@color/colorDetailsLabel"/>
@@ -82,8 +91,7 @@
                         android:hint="@string/asset_name_hint"
                         android:textColor="@color/colorBlack"
                         android:imeOptions="actionDone"
-                        android:inputType="textEmailSubject"
-                        android:singleLine="true"/>
+                        android:inputType="textEmailSubject"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -101,7 +109,7 @@
                         android:clickable="true"
                         android:cursorVisible="false"
                         android:focusable="false"
-                        android:focusableInTouchMode="false" />
+                        android:focusableInTouchMode="false"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -160,23 +168,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/card_margin"
-                android:id="@+id/logCard"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="24dp"
-                android:paddingBottom="24dp">
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add to Log"
-                    android:id="@+id/button"
-                    android:layout_gravity="center_horizontal" />
+                android:id="@+id/logCard">
 
                 <LinearLayout
                     style="@style/Widget.CardContent.Details"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add to Log"
+                        android:id="@+id/button"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

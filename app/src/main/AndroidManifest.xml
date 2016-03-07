@@ -14,8 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:name=".Activity.MainActivity"
+            android:label="@string/main_activity_label"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,7 +38,7 @@
             android:value="im.chaitanya" />
 
         <activity
-            android:name=".AssetDetailActivity"
+            android:name=".Activity.AssetDetailActivity"
             android:label="@string/new_asset"
             android:theme="@style/AppTheme.NoActionBar"/>
         <!--
@@ -54,8 +54,13 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".AssetMap"
+            android:name=".Activity.AssetMap"
             android:label="@string/title_activity_maps"/>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

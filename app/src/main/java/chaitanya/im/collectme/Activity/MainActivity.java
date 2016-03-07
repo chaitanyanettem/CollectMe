@@ -1,4 +1,4 @@
-package chaitanya.im.collectme;
+package chaitanya.im.collectme.Activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -27,6 +27,8 @@ import com.firebase.client.ValueEventListener;
 import java.util.ArrayList;
 
 import chaitanya.im.collectme.Adapters.AssetListAdapter;
+import chaitanya.im.collectme.DataModel.AssetListDataModel;
+import chaitanya.im.collectme.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -89,6 +91,7 @@ public class MainActivity extends AppCompatActivity
                 intent.putExtra("assetExtraInfo", asset.getExtraInfo());
                 intent.putExtra("latitude", asset.getLatitude());
                 intent.putExtra("longitude", asset.getLongitude());
+                intent.putExtra("dateCreated", asset.getDateCreated());
                 context.startActivity(intent);
             }
         });

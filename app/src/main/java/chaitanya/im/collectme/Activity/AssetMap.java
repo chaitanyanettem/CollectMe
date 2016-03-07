@@ -1,10 +1,8 @@
-package chaitanya.im.collectme;
+package chaitanya.im.collectme.Activity;
 
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
 
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -21,6 +19,9 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
+
+import chaitanya.im.collectme.DataModel.AssetListDataModel;
+import chaitanya.im.collectme.R;
 
 public class AssetMap extends FragmentActivity implements OnMapReadyCallback {
 
